@@ -1,0 +1,52 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-input/paper-input.html">
+<link rel="import" href="../paper-button/paper-button.html">
+
+<dom-module id="login-component">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      paper-button {
+        background-color: #0288D1;
+        color: white;
+      }
+    </style>
+    <h2>Iniciar sesión</h2>
+    <paper-input label="Nombre de usuario" value="{{username}}"></paper-input>
+    <paper-input label="Contraseña" type="password" value="{{password}}"></paper-input>
+    <paper-button on-tap="login">Inisiar sesión</paper-button>
+  </template>
+
+  <script>
+    /**
+     * `login-component`
+     * a componen tu log in and register
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class LoginComponent extends Polymer.Element {
+      static get is() { return 'login-component'; }
+      static get properties() {
+        return {
+          username: {
+            type: String,
+            value: ''
+          },
+          password: {
+            type: String,
+            value: ''
+          }
+        };
+      }
+      login(){
+        alert('usuario: ' + this.usename + 'contraseña: ' + this.password)
+      }
+    }
+
+    window.customElements.define(LoginComponent.is, LoginComponent);
+  </script>
+</dom-module>
