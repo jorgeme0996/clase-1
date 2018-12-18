@@ -6,11 +6,11 @@ A component that toogles between login form and register when tap on "aquí" but
 
 Install bower: 
 ```
-npm install -g bower
+$ npm install -g bower
 ```
 Run bower i to download bower components
 ```
-bower i
+$ bower i
 ```
 ## Install the Polymer-CLI
 
