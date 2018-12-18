@@ -1,7 +1,17 @@
 # \<login-component\>
 
-a componen tu log in and register
+A component that toogles between login form and register when tap on "aquí" button.
 
+## Make sure you have bower install
+
+Install bower: 
+```
+npm install -g bower
+```
+Run bower i to download bower components
+```
+bower i
+```
 ## Install the Polymer-CLI
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
